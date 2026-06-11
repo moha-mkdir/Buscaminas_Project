@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Desarrolladores del proyecto Buscaminas DAM." />
+  <title>Autores · Buscaminas Proyecto DAM</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-logo">
+      <span class="mine-icon" aria-hidden="true">💣</span>
+      <span>DAM<span class="accent">mines</span></span>
+    </div>
+    
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">About</a>
+      <a href="caracteristicas.html">Características</a>
+      <a href="autores.html">Autores</a>
+      <a href="contacto.html">Contacto</a> 
+    </div>
+
+    <div class="nav-controls">
+      <button class="dark-toggle" id="darkToggle" aria-label="Cambiar modo oscuro/claro">
+        <span class="toggle-icon">🌙</span>
+      </button>
+      
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="team section" id="team" aria-labelledby="team-title">
+    <div class="container">
+      <div class="section-tag reveal">Meet the Devs</div>
+      <h2 class="section-title reveal" id="team-title">Autores</h2>
+
+      <div class="team-grid">
+        <article class="team-card reveal" tabindex="0">
+          <div class="avatar" aria-hidden="true">
+            <span class="avatar-initials">MO</span>
+            <div class="avatar-ring"></div>
+          </div>
+          <h3 class="dev-name">Mohammed Kassari K.</h3>
+          <span class="dev-role">Database Architect &amp; Web Developer</span>
+          <p class="dev-bio">
+            Responsable del diseño e implementación de la <strong>base de datos MySQL</strong>, así como del desarrollo completo de la plataforma web (HTML, CSS, JS) que presenta el proyecto.
+          </p>
+          <div class="dev-tags">
+            <span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span><span>Git</span>
+          </div>
+        </article>
+
+        <article class="team-card reveal" tabindex="0">
+          <div class="avatar" aria-hidden="true">
+            <span class="avatar-initials">JO</span>
+            <div class="avatar-ring"></div>
+          </div>
+          <h3 class="dev-name">Jonathan Elvira P.</h3>
+          <span class="dev-role">Java Developer &amp; Game Logic</span>
+          <p class="dev-bio">
+            Encargado de programar la aplicación principal en <strong>Java</strong>, construyendo la interfaz gráfica de escritorio con JavaFX y desarrollando toda la lógica interna del Buscaminas.
+          </p>
+          <div class="dev-tags">
+            <span>Java</span><span>J Unit</span><span>JDBC</span><span>Git</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="mine-icon" aria-hidden="true">💣</span>
+          <span>DAM<span class="accent">mines</span></span>
+        </div>
+        <p class="footer-copy">
+          © 2026 Mohammed &amp; Jonathan · Proyecto DAM · Todos los derechos reservados.
+        </p>
+        <p class="footer-sub">Built with ☕ Java &amp; ❤️ effort</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

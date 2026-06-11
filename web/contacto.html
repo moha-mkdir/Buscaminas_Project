@@ -1,0 +1,138 @@
+
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contacto - Buscaminas Proyecto DAM." />
+  <title>Contacto · Buscaminas Proyecto DAM</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-logo">
+      <span class="mine-icon" aria-hidden="true">💣</span>
+      <span>DAM<span class="accent">mines</span></span>
+    </div>
+    
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">About</a>
+      <a href="caracteristicas.html">Características</a>
+      <a href="autores.html">Autores</a>
+      <a href="contacto.html">Contacto</a> 
+    </div>
+
+    <div class="nav-controls">
+      <button class="dark-toggle" id="darkToggle" aria-label="Cambiar modo oscuro/claro">
+        <span class="toggle-icon">🌙</span>
+      </button>
+      
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="contact section" id="contact" style="margin-top: 80px;">
+    <div class="container">
+      <div class="section-tag reveal">Hablemos</div>
+      <h2 class="section-title reveal">Contacto</h2>
+      
+      <p class="hero-subtitle reveal" style="text-align: center; margin-bottom: 3rem;">
+        ¿Tienes alguna duda sobre o quieres reportar algun bug? ¡Escríbenos que tu mensaje nos llega al instante!
+      </p>
+
+      <div class="contact-form-wrap reveal">
+        <div class="form-status" id="formStatus" role="alert" aria-live="polite" hidden></div>
+
+        <!-- Se envia a FORMSPREE -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mbdqojdb" method="POST">
+          
+          <div class="field-group">
+            <label for="contactName">Nombre <span aria-hidden="true" class="accent">*</span></label>
+            <input
+              type="text"
+              id="contactName"
+              name="name"
+              placeholder="Tu nombre"
+              autocomplete="name"
+              required
+              class="form-input"
+            />
+            <span class="field-error" id="nameError" aria-live="polite"></span>
+          </div>
+
+          <div class="field-group">
+            <label for="contactEmail">Email <span aria-hidden="true" class="accent">*</span></label>
+            <input
+              type="email"
+              id="contactEmail"
+              name="email"
+              placeholder="tu@email.com"
+              autocomplete="email"
+              required
+              class="form-input"
+            />
+            <span class="field-error" id="emailError" aria-live="polite"></span>
+          </div>
+
+          <div class="field-group">
+            <label for="contactSubject">Asunto</label>
+            <input
+              type="text"
+              id="contactSubject"
+              name="subject"
+              placeholder="¿De qué se trata?"
+              autocomplete="off"
+              class="form-input"
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="contactMessage">Mensaje <span aria-hidden="true" class="accent">*</span></label>
+            <textarea
+              id="contactMessage"
+              name="message"
+              rows="5"
+              placeholder="Escribe tu mensaje aquí..."
+              required
+              class="form-input"
+            ></textarea>
+            <span class="field-error" id="messageError" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit" id="submitBtn" style="width: 100%; margin-top: 1rem;">
+            <span class="btn-icon">✉️</span> Enviar Mensaje
+          </button>
+        </form>
+        
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="mine-icon" aria-hidden="true">💣</span>
+          <span>DAM<span class="accent">mines</span></span>
+        </div>
+        <p class="footer-copy">
+          © 2026 Mohammed &amp; Jonathan · Proyecto DAM · Todos los derechos reservados.
+        </p>
+        <p class="footer-sub">Built with ☕ Java &amp; ❤️ effort</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

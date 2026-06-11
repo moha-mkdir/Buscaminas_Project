@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sobre el proyecto Buscaminas DAM." />
+  <title>About · Buscaminas Proyecto DAM</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-logo">
+      <span class="mine-icon" aria-hidden="true">💣</span>
+      <span>DAM<span class="accent">mines</span></span>
+    </div>
+    
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">About</a>
+      <a href="caracteristicas.html">Características</a>
+      <a href="autores.html">Autores</a>
+      <a href="contacto.html">Contacto</a> 
+    </div>
+
+    <div class="nav-controls">
+      <button class="dark-toggle" id="darkToggle" aria-label="Cambiar modo oscuro/claro">
+        <span class="toggle-icon">🌙</span>
+      </button>
+      
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="about section" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="section-tag reveal">About the Project</div>
+      <h2 class="section-title reveal" id="about-title">
+        How We Built It
+      </h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lead">
+            This project is a fully functional <strong>Minesweeper</strong> game built from the ground up in <strong>Java</strong>, developed as our final project for the <em>Higher Degree in Multi-platform Application Development (DAM)</em>.
+          </p>
+          <p>
+            The application features an interactive graphical interface where players can reveal cells, place flags, and trigger the classic mine-explosion sequence. Under the hood, every game session is persisted to a <strong>MySQL</strong> relational database through a <strong>JDBC</strong> connection layer, enabling score tracking, leaderboard management, and player history.
+          </p>
+          <p>
+            The project is organized using a standardized <strong>Maven structure</strong>, which automates the build process, seamlessly handles external dependencies like the MySQL connector, and ensures a clean, reproducible lifecycle for the entire application.
+          </p>
+        </div>
+
+        <div class="about-stack reveal">
+          <h3>Tech Stack</h3>
+          <ul class="stack-list" role="list">
+            <li><span class="stack-icon">☕</span><span><strong>Java 21</strong> — Core language</span></li>
+            <li><span class="stack-icon">🗄</span><span><strong>MySQL</strong> — Relational database</span></li>
+            <li><span class="stack-icon">🔌</span><span><strong>JDBC</strong> — Database connectivity</span></li>
+            <li><span class="stack-icon">📦</span><span><strong>Maven</strong> — Build tool & dependency management</span></li>
+            <li><span class="stack-icon">🛠</span><span><strong>VS Code / NetBeans</strong> — IDE</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="mine-icon" aria-hidden="true">💣</span>
+          <span>DAM<span class="accent">mines</span></span>
+        </div>
+        <p class="footer-copy">
+          © 2026 Mohammed &amp; Jonathan · Proyecto DAM · Todos los derechos reservados.
+        </p>
+        <p class="footer-sub">Built with ☕ Java &amp; ❤️ effort</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
