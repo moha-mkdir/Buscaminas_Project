@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación - DAMmines</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #d4380d;
+            --bg: #f4f7f6;
+            --card-bg: #ffffff;
+            --text: #333333;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .header h1 span {
+            color: var(--accent);
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+            border: 1px solid #eaeaea;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: var(--accent);
+        }
+        
+        .card.github {
+            border-color: #333;
+            background-color: #fafafa;
+        }
+
+        .card.github:hover {
+            border-color: #000;
+            background-color: #fff;
+        }
+
+        .icon {
+            font-size: 2.2rem;
+        }
+
+        .info h2 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+
+        .info p {
+            font-size: 0.85rem;
+            color: #777;
+            line-height: 1.4;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>📚 Docu<span>DAMmines</span></h1>
+        <p>Repositorio oficial de documentación del proyecto Buscaminas</p>
+    </div>
+
+    <div class="grid-container">
+        
+        <a href="Actas1-10(Mohammed y Jonathan).pdf" class="card" target="_blank">
+            <div class="icon">📝</div>
+            <div class="info">
+                <h2>Actas de Reunión (1-10)</h2>
+                <p>Registro completo de todas las fases y decisiones del proyecto.</p>
+            </div>
+        </a>
+
+        <a href="DocumentoAnalisisBuscamina.pdf" class="card" target="_blank">
+            <div class="icon">📄</div>
+            <div class="info">
+                <h2>Documento de Análisis</h2>
+                <p>Requisitos, estructura y especificaciones del juego.</p>
+            </div>
+        </a>
+
+        <a href="Diagrama de Flujo Inicial-(Mohammed K. y Jonathan E.).pdf" class="card" target="_blank">
+            <div class="icon">🔄</div>
+            <div class="info">
+                <h2>Diagrama de Flujo</h2>
+                <p>Lógica inicial y estructura del algoritmo.</p>
+            </div>
+        </a>
+
+        <a href="BBDD(Mohammed y Jonathan).pdf" class="card" target="_blank">
+            <div class="icon">🗄️</div>
+            <div class="info">
+                <h2>Diseño de Base de Datos</h2>
+                <p>Esquema relacional y almacenamiento de partidas.</p>
+            </div>
+        </a>
+
+        <a href="Wireframes(Mohammed y Jonathan).png" class="card" target="_blank">
+            <div class="icon">🎨</div>
+            <div class="info">
+                <h2>Wireframes (Interfaz)</h2>
+                <p>Bocetos visuales y diseño de las ventanas.</p>
+            </div>
+        </a>
+
+        <a href="PRUEBA DEL FUNCIONAMIENTO DEL PROYECTO CON CAPTURAS.pdf" class="card" target="_blank">
+            <div class="icon">✅</div>
+            <div class="info">
+                <h2>Pruebas de Funcionamiento</h2>
+                <p>Capturas y evidencias del juego ejecutándose.</p>
+            </div>
+        </a>
+
+        <a href="Prevencion de RiesgosLaborales.pdf" class="card" target="_blank">
+            <div class="icon">🛡️</div>
+            <div class="info">
+                <h2>Riesgos Laborales</h2>
+                <p>Normas de ergonomía y prevención en el desarrollo.</p>
+            </div>
+        </a>
+
+        <a href="URLwebDAMmines.pdf" class="card" target="_blank">
+            <div class="icon">🌐</div>
+            <div class="info">
+                <h2>Sobre Web</h2>
+                <p>Características y URL de acceso a la web online .</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/moha-mkdir/Buscaminas_Project" class="card github" target="_blank">
+            <div class="icon">💻</div>
+            <div class="info">
+                <h2>Código Fuente en GitHub</h2>
+                <p>Ver el código Java, estructura de la WEB, base de datosy recursos del proyecto.</p>
+            </div>
+        </a>
+
+    </div>
+
+    <footer>
+        Proyecto DAMmines © 2026 | Desarrollado por Mohammed Kassari y Jonathan Elvira
+    </footer>
+
+</body>
+</html>

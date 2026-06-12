@@ -1,3 +1,0 @@
-Manifest-Version: 2.0
-Created-By: Mohammed Kassari and Jonathan Elvira
-Main-Class: com.buscaminas.Main
